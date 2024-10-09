@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+body {
+    background: linear-gradient(150deg, rgb(71, 13, 163), rgb(5, 18, 31));
+}
+
+/* Header */
+
+#cabeca {
+    height: 10%;
+    background: black;
+}
+
+#cabeca h1 {
+    color: #FF3131;
+}
+
+/* Div PAI */
+
+#pesquisaPai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem;
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    
+}
+
+/*Div filha da Pesquisa*/
+
+.pesquisaFilho {
+   height: 450px;
+   margin: 0.5rem 1rem 3rem 10rem;
+   border-radius: 2rem;
+   background-image: url(../imgs/imgFlix.jpg);
+   background-size: cover; /* Faz a imagem cobrir todo o elemento */
+   background-position: center; /* Centraliza a imagem horizontal e verticalmente */
+   background-repeat: no-repeat; 
+}
+
+/*h1/h2 da Pesquisa*/
+
+.pesquisaFilho h1, h2 {
+    margin: 1rem ;
+    color: #FF3131;
+}
+
+.pesquisaFilho input { 
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+     
+
+button {
+    background-color:#FF3131; 
+    color: rgb(15, 15, 15);
+    padding: 15px 32px; 
+    text-align: center;
+    font-size: 18px;
+    margin: 8rem 1rem 7rem 0;
+    cursor: pointer;  
+    border-color: black;
+    
+  }
+
+  .botEnviar {
+    margin-top: 2rem;
+  }
+
+  /* input pesquisa*/
+
+  #search {
+    
+    text-align: center;
+    color: rgb(3, 3, 7);
+    
+        
+
+  }
