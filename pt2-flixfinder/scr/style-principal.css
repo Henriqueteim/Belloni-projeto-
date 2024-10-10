@@ -1,88 +1,69 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-   
-}
-body {
-    background: linear-gradient(150deg, rgb(71, 13, 163), rgb(5, 18, 31));
-}
-
-/* Header */
-
-#cabeca {
-    height: 10%;
-    background: black;
+    background-image: url(../imgs/logoNet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#cabeca h1 {
-    color: #FF3131;
+.container {
+    
+    filter: saturate(2.5);
+    height: 60vh;
+    max-width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
-/* Div PAI */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #e50914; /* Vermelho Netflix */
+    font-weight: 700;
+}
 
-#pesquisaPai {
+form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2.5rem;
-    width: 80%;
-    height: auto;
     flex-direction: column;
-    
+    gap: 20px;
 }
 
-/*Div filha da Pesquisa*/
-
-.pesquisaFilho {
-   height: 450px;
-   margin: 0.5rem 1rem 3rem 10rem;
-   border-radius: 2rem;
-   background-image: url(../imgs/imgFlix.jpg);
-   background-size: cover; /* Faz a imagem cobrir todo o elemento */
-   background-position: center; /* Centraliza a imagem horizontal e verticalmente */
-   background-repeat: no-repeat; 
+label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #ffffff;
 }
 
-/*h1/h2 da Pesquisa*/
-
-.pesquisaFilho h1, h2 {
-    margin: 1rem ;
-    color: #FF3131;
-}
-
-.pesquisaFilho input { 
-    width: 80%;
+select, input[type="submit"] {
     padding: 10px;
-    border: 1px solid #ccc;
+    font-size: 1.1em;
     border-radius: 5px;
+    border: none;
 }
 
-     
+select {
+    background-color: #020101;
+    color: #fff;
+}
 
-button {
-    background-color:#FF3131; 
-    color: rgb(15, 15, 15);
-    padding: 15px 32px; 
+input[type="submit"] {
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #b20710;
+}
+
+.footer {
     text-align: center;
-    font-size: 18px;
-    margin: 8rem 1rem 7rem 0;
-    cursor: pointer;  
-    border-color: black;
-    
-  }
-
-  .botEnviar {
-    margin-top: 2rem;
-  }
-
-  /* input pesquisa*/
-
-  #search {
-    
-    text-align: center;
-    color: rgb(3, 3, 7);
-    
-        
-
-  }
+    margin-top: 20px;
+    color: #ff0000;
+}
