@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flix Finder - Encontre Seu Filme ou Série</title>
+   <link rel="stylesheet" href="../pt2-flixfinder/scr/style-principal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flix Finder</h1>
+        <form action="buscar.php" method="POST">
+            <div>
+                <label for="genero">Selecione o Gênero:</label>
+                <select name="genero" id="genero" required>
+                    <option value="">Escolha um gênero</option>
+                    <option value="acao">Ação</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="comedia">Comédia</option>
+                    <option value="drama">Drama</option>
+                    <option value="terror">Terror</option>
+                    <option value="ficcao">Ficção Científica</option>
+                    <option value="documentario">Documentário</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="faixa-etaria">Selecione a Faixa Etária:</label>
+                <select name="faixa-etaria" id="faixa-etaria" required>
+                    <option value="">Escolha uma faixa etária</option>
+                    <option value="livre">Livre</option>
+                    <option value="10">10+</option>
+                    <option value="12">12+</option>
+                    <option value="14">14+</option>
+                    <option value="16">16+</option>
+                    <option value="18">18+</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="ano">Selecione o Ano de Lançamento:</label>
+                <select name="ano" id="ano" required>
+                    <option value="">Escolha um ano</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2015">2015-2019</option>
+                    <option value="2010">2010-2014</option>
+                    <option value="2000">2000-2009</option>
+                    <option value="1990">1990-1999</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Buscar">
+        </form>
+
+        <div class="movie-container" id="movieContainer">
+            <!-- Os filmes serão exibidos aqui -->
+        </div>
+
+        <div class="footer">
+            <p>© 2024 FLIX FINDER - Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>
